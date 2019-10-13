@@ -67,9 +67,10 @@ ul li:last-child { border-radius:0 5px 5px 5px; }
     padding: 0 80px;
     max-width:  34em;
     margin: auto;
-    word-spacing: 0.5em;
+    /* word-spacing: 0.5em; */
     text-transform: capitalize;
     font-family: cursive;
+    overflow-wrap: break-word;
 }
 
 .title{

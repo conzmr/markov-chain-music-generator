@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="./main.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "./style.css" />
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <h1 class="title">Markov Chain Music Generator</h1> 
+        <ul class="set">
+                <li ng-click="startPlayer('do')" class="white b" ng-class="{'white-active': currentState == 'do'}"></li>
+                <li ng-click="startPlayer('reb')" class="black as" ng-class="{'black-active': currentState == 'reb'}"></li>
+                <li ng-click="startPlayer('re')" class="white a" ng-class="{'white-active': currentState == 're'}"></li>
+                <li ng-click="startPlayer('mib')" class="black gs" ng-class="{'black-active': currentState == 'mib'}"></li>
+                <li ng-click="startPlayer('mi')" class="white g" ng-class="{'white-active': currentState == 'mi'}"></li>
+                <li ng-click="startPlayer('fa')" class="white f" ng-class="{'white-active': currentState == 'fa'}"></li>
+                <li ng-click="startPlayer('solb')" class="black fs" ng-class="{'black-active': currentState == 'solb'}"></li>
+                <li ng-click="startPlayer('sol')" class="white e" ng-class="{'white-active': currentState == 'sol'}"></li>
+                <li ng-click="startPlayer('lab')" class="black ds" ng-class="{'black-active': currentState == 'lab'}"></li>
+                <li ng-click="startPlayer('la')" class="white d" ng-class="{'white-active': currentState == 'la'}"></li>
+                <li ng-click="startPlayer('sib')" class="black cs" ng-class="{'black-active': currentState == 'sib'}"></li>
+                <li ng-click="startPlayer('si')" class="white c" ng-class="{'white-active': currentState == 'si'}"></li>
+        </ul>
+        <h2 class="song-text">{{ song }}</h2> 
+    </div>
+</body>
+</html>
